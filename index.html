@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./images">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img class="logo" src="images/logo.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br>It's <span>Starbucks</span></h2>
+                <p>
+                    Disclaimer video is for educational purpose only. Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use
+                    is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img class="starbucks" src="images/img1.png" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png');changeCircleColor('#eb7495')" alt=""></li>
+            <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png');changeCircleColor('#d752b1')" alt=""></li>
+        </ul>
+        <ul class="sci">
+            <li>
+                <a href="#"><img src="images/facebook.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/instagram.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/twitter.png" alt=""></a>
+            </li>
+
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
